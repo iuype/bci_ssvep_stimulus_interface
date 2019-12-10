@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on 十二月 10, 2019, at 22:18
+    on 十二月 10, 2019, at 22:45
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -81,7 +81,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "instr"
 instrClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
-    text='脑机接口\n\n视觉刺激实验\n\n按"空格"继续',
+    text='脑机接口\n\n视觉刺激实验\n\n按"空格"继续\n\n可随时按"ESC"退出',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 

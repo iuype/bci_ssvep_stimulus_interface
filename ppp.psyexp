@@ -168,7 +168,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="脑机接口&amp;#10;&amp;#10;视觉刺激实验&amp;#10;&amp;#10;按&quot;空格&quot;继续" valType="str"/>
+        <Param name="text" updates="constant" val="脑机接口&amp;#10;&amp;#10;视觉刺激实验&amp;#10;&amp;#10;按&quot;空格&quot;继续&amp;#10;&amp;#10;可随时按&quot;ESC&quot;退出" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
