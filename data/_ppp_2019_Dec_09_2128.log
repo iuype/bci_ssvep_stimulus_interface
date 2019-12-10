@@ -1,0 +1,14 @@
+1.6296 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+4.2880 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000024D21D62A88>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000024D21DD4A88>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.2881 	EXP 	window1: recordFrameIntervals = False
+4.6376 	EXP 	window1: recordFrameIntervals = True
+4.8208 	EXP 	window1: recordFrameIntervals = False
+4.8223 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+4.8232 	EXP 	Created polygon_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='polygon_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.8259 	EXP 	Imported condi.csv as conditions, 3 conditions, 1 params
+4.8261 	EXP 	Created sequence: random, trialTypes=3, nReps=5, seed=None
+4.8263 	EXP 	New trial (rep=0, index=0): OrderedDict([('num', 3)])
+4.8436 	EXP 	polygon: autoDraw = True
+4.8436 	EXP 	polygon_2: autoDraw = True
+6.0219 	DATA 	Keypress: escape
+6.0324 	EXP 	window1: mouseVisible = True

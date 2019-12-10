@@ -1,0 +1,42 @@
+1.6560 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+4.2555 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002062F7E2A48>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002062F854A08>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.2555 	EXP 	window1: recordFrameIntervals = False
+4.4215 	EXP 	window1: recordFrameIntervals = True
+4.6046 	EXP 	window1: recordFrameIntervals = False
+4.6061 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon', opacity=1.0, ori=array(0.), pos=array([-0.2,  0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+4.6070 	EXP 	Created polygon_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='polygon_2', opacity=1.0, ori=array(0.), pos=array([0.2, 0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+4.6098 	EXP 	Imported condi.csv as conditions, 3 conditions, 1 params
+4.6100 	EXP 	Created sequence: random, trialTypes=3, nReps=5, seed=None
+4.6102 	EXP 	New trial (rep=0, index=0): OrderedDict([('num', 1)])
+4.6262 	EXP 	polygon: autoDraw = True
+4.6262 	EXP 	polygon_2: autoDraw = True
+10.8519 	DATA 	Keypress: escape
+10.8685 	EXP 	window1: mouseVisible = True
+1.6356 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+4.0293 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001ED044A2888>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001ED04513888>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.0294 	EXP 	window1: recordFrameIntervals = False
+4.1962 	EXP 	window1: recordFrameIntervals = True
+4.3792 	EXP 	window1: recordFrameIntervals = False
+4.3807 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon', opacity=1.0, ori=array(0.), pos=array([-0.2,  0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+4.3816 	EXP 	Created polygon_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon_2', opacity=1.0, ori=array(0.), pos=array([0.2, 0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+4.3843 	EXP 	Imported condi.csv as conditions, 3 conditions, 1 params
+4.3846 	EXP 	Created sequence: random, trialTypes=3, nReps=5, seed=None
+4.3848 	EXP 	New trial (rep=0, index=0): OrderedDict([('num', 3)])
+4.4017 	EXP 	polygon: autoDraw = True
+4.4017 	EXP 	polygon_2: autoDraw = True
+5.8626 	DATA 	Keypress: escape
+5.8737 	EXP 	window1: mouseVisible = True
+1.5936 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+3.5138 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F0DDE82A48>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F0DDEF3988>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+3.5138 	EXP 	window1: recordFrameIntervals = False
+3.8943 	EXP 	window1: recordFrameIntervals = True
+4.0776 	EXP 	window1: recordFrameIntervals = False
+4.0791 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon', opacity=1.0, ori=array(0.), pos=array([-0.3,  0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+4.0800 	EXP 	Created polygon_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon_2', opacity=1.0, ori=array(0.), pos=array([0.3, 0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+4.0826 	EXP 	Imported condi.csv as conditions, 3 conditions, 1 params
+4.0828 	EXP 	Created sequence: random, trialTypes=3, nReps=5, seed=None
+4.0830 	EXP 	New trial (rep=0, index=0): OrderedDict([('num', 2)])
+4.0995 	EXP 	polygon: autoDraw = True
+4.0995 	EXP 	polygon_2: autoDraw = True
+5.7110 	DATA 	Keypress: escape
+5.7224 	EXP 	window1: mouseVisible = True

@@ -1,0 +1,41 @@
+8.1436 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+11.5185 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+13.1882 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001E2D048F608>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001E2D0513608>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.1882 	EXP 	window1: recordFrameIntervals = False
+13.3543 	EXP 	window1: recordFrameIntervals = True
+13.5377 	EXP 	window1: recordFrameIntervals = False
+13.6526 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.6558 	EXP 	Imported condi.csv as conditions, 3 conditions, 1 params
+13.6561 	EXP 	Created sequence: random, trialTypes=3, nReps=5, seed=None
+13.6563 	EXP 	New trial (rep=0, index=0): OrderedDict([('num', 2)])
+13.6656 	EXP 	text: text = 2
+13.6656 	EXP 	text: autoDraw = True
+14.6543 	EXP 	New trial (rep=0, index=1): OrderedDict([('num', 1)])
+14.6702 	EXP 	text: autoDraw = False
+14.6702 	EXP 	text: text = 1
+14.6702 	EXP 	text: autoDraw = True
+15.6537 	EXP 	New trial (rep=0, index=2): OrderedDict([('num', 3)])
+15.6696 	EXP 	text: autoDraw = False
+15.6696 	EXP 	text: text = 3
+15.6696 	EXP 	text: autoDraw = True
+16.6529 	EXP 	New trial (rep=1, index=0): OrderedDict([('num', 1)])
+16.6690 	EXP 	text: autoDraw = False
+16.6690 	EXP 	text: autoDraw = False
+16.6690 	EXP 	text: text = 1
+16.6690 	EXP 	text: autoDraw = True
+17.6522 	EXP 	New trial (rep=1, index=1): OrderedDict([('num', 2)])
+17.6685 	EXP 	text: autoDraw = False
+17.6685 	EXP 	text: autoDraw = False
+17.6685 	EXP 	text: text = 2
+17.6685 	EXP 	text: autoDraw = True
+18.6526 	EXP 	New trial (rep=1, index=2): OrderedDict([('num', 3)])
+18.6690 	EXP 	text: autoDraw = False
+18.6690 	EXP 	text: autoDraw = False
+18.6690 	EXP 	text: text = 3
+18.6690 	EXP 	text: autoDraw = True
+19.6681 	EXP 	New trial (rep=2, index=0): OrderedDict([('num', 2)])
+19.6839 	EXP 	text: autoDraw = False
+19.6839 	EXP 	text: text = 2
+19.6839 	EXP 	text: autoDraw = True
+20.6260 	DATA 	Keypress: escape
+20.6398 	EXP 	window1: mouseVisible = True

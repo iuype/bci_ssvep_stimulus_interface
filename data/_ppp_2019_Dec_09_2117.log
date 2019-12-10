@@ -1,0 +1,46 @@
+1.6691 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+2.7603 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+4.1108 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001C3022D2A88>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001C302343988>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.1108 	EXP 	window1: recordFrameIntervals = False
+4.2751 	EXP 	window1: recordFrameIntervals = True
+4.4585 	EXP 	window1: recordFrameIntervals = False
+4.5067 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.5389 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, dir=0.0, dotLife=3, dotSize=2, element=None, fieldPos=array([0., 0.]), fieldShape='circle', fieldSize=array([1., 1.]), nDots=100, name='dots', noiseDots='direction', opacity=1.0, rgb=array([1., 1., 1.]), signalDots='same', speed=0.1, units='height', win=Window(...))
+4.5418 	EXP 	Imported condi.csv as conditions, 3 conditions, 1 params
+4.5421 	EXP 	Created sequence: random, trialTypes=3, nReps=5, seed=None
+4.5423 	EXP 	New trial (rep=0, index=0): OrderedDict([('num', 1)])
+4.5730 	EXP 	text: text = 1
+4.5730 	EXP 	text: autoDraw = True
+4.5730 	EXP 	dots: autoDraw = True
+5.5420 	EXP 	New trial (rep=0, index=1): OrderedDict([('num', 2)])
+5.5580 	EXP 	text: autoDraw = False
+5.5580 	EXP 	dots: autoDraw = False
+5.5580 	EXP 	text: text = 2
+5.5580 	EXP 	text: autoDraw = True
+5.5580 	EXP 	dots: autoDraw = True
+6.5413 	EXP 	New trial (rep=0, index=2): OrderedDict([('num', 3)])
+6.5574 	EXP 	text: autoDraw = False
+6.5574 	EXP 	dots: autoDraw = False
+6.5574 	EXP 	text: text = 3
+6.5574 	EXP 	text: autoDraw = True
+6.5574 	EXP 	dots: autoDraw = True
+7.5408 	EXP 	New trial (rep=1, index=0): OrderedDict([('num', 1)])
+7.5565 	EXP 	text: autoDraw = False
+7.5565 	EXP 	dots: autoDraw = False
+7.5565 	EXP 	text: text = 1
+7.5565 	EXP 	text: autoDraw = True
+7.5565 	EXP 	dots: autoDraw = True
+8.5403 	EXP 	New trial (rep=1, index=1): OrderedDict([('num', 3)])
+8.5569 	EXP 	text: autoDraw = False
+8.5569 	EXP 	dots: autoDraw = False
+8.5569 	EXP 	text: text = 3
+8.5569 	EXP 	text: autoDraw = True
+8.5569 	EXP 	dots: autoDraw = True
+9.5400 	EXP 	New trial (rep=1, index=2): OrderedDict([('num', 2)])
+9.5559 	EXP 	text: autoDraw = False
+9.5559 	EXP 	dots: autoDraw = False
+9.5559 	EXP 	text: text = 2
+9.5559 	EXP 	text: autoDraw = True
+9.5559 	EXP 	dots: autoDraw = True
+10.4405 	DATA 	Keypress: escape
+10.4608 	EXP 	window1: mouseVisible = True

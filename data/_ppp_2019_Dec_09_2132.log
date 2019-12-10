@@ -1,0 +1,14 @@
+1.8102 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+5.1654 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002B7C3450848>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002B7C34C3548>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.1654 	EXP 	window1: recordFrameIntervals = False
+5.3315 	EXP 	window1: recordFrameIntervals = True
+5.5152 	EXP 	window1: recordFrameIntervals = False
+5.5179 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon', opacity=1.0, ori=array(0.), pos=array([-0.3,  0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+5.5199 	EXP 	Created polygon_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon_2', opacity=1.0, ori=array(0.), pos=array([0.3, 0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+5.5250 	EXP 	Imported condi.csv as conditions, 3 conditions, 1 params
+5.5255 	EXP 	Created sequence: random, trialTypes=3, nReps=5, seed=None
+5.5258 	EXP 	New trial (rep=0, index=0): OrderedDict([('num', 3)])
+5.5376 	EXP 	polygon: autoDraw = True
+5.5376 	EXP 	polygon_2: autoDraw = True
+7.4156 	DATA 	Keypress: escape
+7.4339 	EXP 	window1: mouseVisible = True

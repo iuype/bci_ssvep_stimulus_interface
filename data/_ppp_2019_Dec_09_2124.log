@@ -1,0 +1,39 @@
+1.6752 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+3.6004 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002AF301046C8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002AF30173688>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+3.6004 	EXP 	window1: recordFrameIntervals = False
+3.7668 	EXP 	window1: recordFrameIntervals = True
+3.9506 	EXP 	window1: recordFrameIntervals = False
+3.9521 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+3.9548 	EXP 	Imported condi.csv as conditions, 3 conditions, 1 params
+3.9551 	EXP 	Created sequence: random, trialTypes=3, nReps=5, seed=None
+3.9553 	EXP 	New trial (rep=0, index=0): OrderedDict([('num', 2)])
+3.9708 	EXP 	polygon: autoDraw = True
+4.9668 	EXP 	New trial (rep=0, index=1): OrderedDict([('num', 3)])
+4.9828 	EXP 	polygon: autoDraw = False
+4.9828 	EXP 	polygon: autoDraw = True
+5.9661 	EXP 	New trial (rep=0, index=2): OrderedDict([('num', 1)])
+5.9826 	EXP 	polygon: autoDraw = False
+5.9826 	EXP 	polygon: autoDraw = True
+6.9656 	EXP 	New trial (rep=1, index=0): OrderedDict([('num', 1)])
+6.9816 	EXP 	polygon: autoDraw = False
+6.9816 	EXP 	polygon: autoDraw = True
+7.9669 	EXP 	New trial (rep=1, index=1): OrderedDict([('num', 2)])
+7.9820 	EXP 	polygon: autoDraw = False
+7.9820 	EXP 	polygon: autoDraw = True
+8.9646 	EXP 	New trial (rep=1, index=2): OrderedDict([('num', 3)])
+8.9807 	EXP 	polygon: autoDraw = False
+8.9807 	EXP 	polygon: autoDraw = True
+9.9641 	EXP 	New trial (rep=2, index=0): OrderedDict([('num', 3)])
+9.9801 	EXP 	polygon: autoDraw = False
+9.9801 	EXP 	polygon: autoDraw = True
+10.9652 	EXP 	New trial (rep=2, index=1): OrderedDict([('num', 2)])
+10.9795 	EXP 	polygon: autoDraw = False
+10.9795 	EXP 	polygon: autoDraw = True
+11.9636 	EXP 	New trial (rep=2, index=2): OrderedDict([('num', 1)])
+11.9802 	EXP 	polygon: autoDraw = False
+11.9802 	EXP 	polygon: autoDraw = True
+12.9642 	EXP 	New trial (rep=3, index=0): OrderedDict([('num', 1)])
+12.9783 	EXP 	polygon: autoDraw = False
+12.9783 	EXP 	polygon: autoDraw = True
+13.1622 	DATA 	Keypress: escape
+13.1726 	EXP 	window1: mouseVisible = True
