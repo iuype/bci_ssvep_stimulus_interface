@@ -1,0 +1,59 @@
+1.9385 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+4.1015 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000212ECF747C8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000212ECFE5748>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.1016 	EXP 	window1: recordFrameIntervals = False
+4.2660 	EXP 	window1: recordFrameIntervals = True
+4.4504 	EXP 	window1: recordFrameIntervals = False
+4.5548 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='脑机接口\n\n视觉刺激实验\n\n按"空格"继续', units='height', win=Window(...), wrapWidth=1)
+4.5578 	EXP 	Created polygon_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon_3', opacity=1.0, ori=array(0.), pos=array([-0.3,  0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+4.5595 	EXP 	Created polygon_4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon_4', opacity=1.0, ori=array(0.), pos=array([0.3, 0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+4.5612 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon', opacity=1.0, ori=array(0.), pos=array([-0.3,  0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+4.5629 	EXP 	Created polygon_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon_2', opacity=1.0, ori=array(0.), pos=array([0.3, 0. ]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+4.5696 	EXP 	text: autoDraw = True
+5.4019 	DATA 	Keypress: space
+5.4172 	EXP 	text: autoDraw = False
+5.4172 	EXP 	polygon_3: fillColor = '[1. 1. 1.] (rgb)'
+5.4172 	EXP 	polygon: fillColor = '[1. 0. 0.] (rgb)'
+5.4172 	EXP 	polygon_3: autoDraw = True
+5.4172 	EXP 	polygon_4: autoDraw = True
+6.4313 	EXP 	polygon_3: autoDraw = False
+6.4313 	EXP 	polygon_4: autoDraw = False
+6.4313 	EXP 	polygon: autoDraw = True
+6.4313 	EXP 	polygon_2: autoDraw = True
+6.4313 	EXP 	polygon: fillColor = '[-1. -1. -1.] (rgb)'
+6.4313 	EXP 	polygon_2: fillColor = '[-1. -1. -1.] (rgb)'
+6.4491 	EXP 	polygon: fillColor = '[-1.11022302e-16 -1.11022302e-16 -1.11022302e-16] (rgb)'
+6.4491 	EXP 	polygon_2: fillColor = '[0.73205081 0.73205081 0.73205081] (rgb)'
+6.4647 	EXP 	polygon: fillColor = '[0.73205081 0.73205081 0.73205081] (rgb)'
+6.4647 	EXP 	polygon_2: fillColor = '[-2.73205081 -2.73205081 -2.73205081] (rgb)'
+6.4817 	EXP 	polygon: fillColor = '[1. 1. 1.] (rgb)'
+6.4817 	EXP 	polygon_2: fillColor = '[-1. -1. -1.] (rgb)'
+6.4979 	EXP 	polygon: fillColor = '[0.73205081 0.73205081 0.73205081] (rgb)'
+6.4979 	EXP 	polygon_2: fillColor = '[0.73205081 0.73205081 0.73205081] (rgb)'
+6.5156 	EXP 	polygon: fillColor = '[-1.11022302e-16 -1.11022302e-16 -1.11022302e-16] (rgb)'
+6.5156 	EXP 	polygon_2: fillColor = '[-2.73205081 -2.73205081 -2.73205081] (rgb)'
+6.5313 	EXP 	polygon: fillColor = '[-1. -1. -1.] (rgb)'
+6.5313 	EXP 	polygon_2: fillColor = '[-1. -1. -1.] (rgb)'
+6.5484 	EXP 	polygon: fillColor = '[-2. -2. -2.] (rgb)'
+6.5484 	EXP 	polygon_2: fillColor = '[0.73205081 0.73205081 0.73205081] (rgb)'
+6.5653 	EXP 	polygon: fillColor = '[-2.73205081 -2.73205081 -2.73205081] (rgb)'
+6.5653 	EXP 	polygon_2: fillColor = '[-2.73205081 -2.73205081 -2.73205081] (rgb)'
+6.5816 	EXP 	polygon: fillColor = '[-3. -3. -3.] (rgb)'
+6.5816 	EXP 	polygon_2: fillColor = '[-1. -1. -1.] (rgb)'
+6.5982 	EXP 	polygon: fillColor = '[-2.73205081 -2.73205081 -2.73205081] (rgb)'
+6.5982 	EXP 	polygon_2: fillColor = '[0.73205081 0.73205081 0.73205081] (rgb)'
+6.6149 	EXP 	polygon: fillColor = '[-2. -2. -2.] (rgb)'
+6.6149 	EXP 	polygon_2: fillColor = '[-2.73205081 -2.73205081 -2.73205081] (rgb)'
+6.6313 	EXP 	polygon: fillColor = '[-1. -1. -1.] (rgb)'
+6.6313 	EXP 	polygon_2: fillColor = '[-1. -1. -1.] (rgb)'
+6.6479 	EXP 	polygon: fillColor = '[-1.44328993e-15 -1.44328993e-15 -1.44328993e-15] (rgb)'
+6.6479 	EXP 	polygon_2: fillColor = '[0.73205081 0.73205081 0.73205081] (rgb)'
+6.6652 	EXP 	polygon: fillColor = '[0.73205081 0.73205081 0.73205081] (rgb)'
+6.6652 	EXP 	polygon_2: fillColor = '[-2.73205081 -2.73205081 -2.73205081] (rgb)'
+6.6816 	EXP 	polygon: fillColor = '[1. 1. 1.] (rgb)'
+6.6816 	EXP 	polygon_2: fillColor = '[-1. -1. -1.] (rgb)'
+6.6985 	EXP 	polygon: fillColor = '[0.73205081 0.73205081 0.73205081] (rgb)'
+6.6985 	EXP 	polygon_2: fillColor = '[0.73205081 0.73205081 0.73205081] (rgb)'
+6.7150 	EXP 	polygon: fillColor = '[-4.4408921e-16 -4.4408921e-16 -4.4408921e-16] (rgb)'
+6.7150 	EXP 	polygon_2: fillColor = '[-2.73205081 -2.73205081 -2.73205081] (rgb)'
+6.7192 	DATA 	Keypress: escape
+6.7774 	EXP 	window1: mouseVisible = True
