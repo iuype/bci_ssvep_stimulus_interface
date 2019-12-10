@@ -2,4 +2,6 @@ from MP import TriggerBox
 
 
 if __name__ == '__main__':
-    pp = TriggerBox()
+    triggerbox = TriggerBox()
+
+    triggerbox.OutputEventData(3)
