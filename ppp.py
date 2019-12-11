@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on 十二月 11, 2019, at 16:46
+    on 十二月 11, 2019, at 20:41
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -15,7 +15,7 @@ from __future__ import absolute_import, division
 
 from psychopy import locale_setup
 from psychopy import prefs
-from psychopy import sound, gui, visual, core, data, event, logging, clock, parallel
+from psychopy import sound, gui, visual, core, data, event, logging, clock
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 
@@ -88,83 +88,174 @@ text = visual.TextStim(win=win, name='text',
     languageStyle='LTR',
     depth=0.0);
 key_resp = keyboard.Keyboard()
-polygon_6 = visual.Rect(
-    win=win, name='polygon_6',units='pix', 
-    width=(100, 100)[0], height=(100, 100)[1],
-    ori=0, pos=(-540, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=-2.0, interpolate=True)
-polygon_7 = visual.Rect(
-    win=win, name='polygon_7',units='cm', 
-    width=(6, 6)[0], height=(6, 6)[1],
-    ori=0, pos=(0, 13),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=-3.0, interpolate=True)
+# instr Begin Experiment
+import numpy as np
+
+Freq = np.array([8.00, 14.00, 10.00, 11.00, 12.00, 13.00, 9.00, 15.00])
+Phas = np.array([1.05,  0.10,  0.35,  1.40,  0.45, 0.70,  1.75,  0.80])
+
+varpy = [600,90]
+
+x0 = 1020*0/3 - 510
+x1 = 1020*1/3 - 510
+x2 = 1020*2/3 - 510
+x3 = 1020*3/3 - 510
+
+y0 = 1020*0/3 - 510
+y1 = 1020*1/3 - 510
+y2 = 1020*2/3 - 510
+y3 = 1020*3/3 - 510
+
+mylocation = [
+[(x0+x1)/2,(y2+y3)/2],
+[(x1+x2)/2,(y2+y3)/2],
+[(x2+x3)/2,(y2+y3)/2],
+
+[(x0+x1)/2,(y1+y2)/2],
+[(x1+x2)/2,(y1+y2)/2],
+[(x2+x3)/2,(y1+y2)/2],
+
+[(x0+x1)/2,(y0+y1)/2],
+[(x1+x2)/2,(y0+y1)/2],
+[(x2+x3)/2,(y0+y1)/2]
+]
+
+size_w = 200
+size_h = 200
+
 
 # Initialize components for Routine "cue"
 cueClock = core.Clock()
-polygon_3 = visual.Rect(
-    win=win, name='polygon_3',
-    width=(0.2, 0.2)[0], height=(0.2, 0.2)[1],
-    ori=0, pos=(-0.3, 0),
+polygon_0 = visual.Rect(
+    win=win, name='polygon_0',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1.000,1.000,1.000], fillColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-polygon_4 = visual.Rect(
-    win=win, name='polygon_4',
-    width=(0.2, 0.2)[0], height=(0.2, 0.2)[1],
-    ori=0, pos=(0.3, 0),
+polygon_1 = visual.Rect(
+    win=win, name='polygon_1',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
-text_2 = visual.TextStim(win=win, name='text_2',
-    text='命令1',
-    font='Arial',
-    pos=(-0.3, 0), height=0.05, wrapWidth=None, ori=0, 
-    color=[-1.000,-1.000,-1.000], colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-2.0);
-text_5 = visual.TextStim(win=win, name='text_5',
-    text='命令2',
-    font='Arial',
-    pos=(0.3, 0), height=0.05, wrapWidth=None, ori=0, 
-    color=[-1.000,-1.000,-1.000], colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-3.0);
+polygon_2 = visual.Rect(
+    win=win, name='polygon_2',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
+    opacity=1, depth=-2.0, interpolate=True)
+polygon_3 = visual.Rect(
+    win=win, name='polygon_3',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
+    opacity=1, depth=-3.0, interpolate=True)
+polygon_4 = visual.Rect(
+    win=win, name='polygon_4',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
+    opacity=1, depth=-4.0, interpolate=True)
+polygon_5 = visual.Rect(
+    win=win, name='polygon_5',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
+    opacity=1, depth=-5.0, interpolate=True)
+polygon_6 = visual.Rect(
+    win=win, name='polygon_6',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
+    opacity=1, depth=-6.0, interpolate=True)
+polygon_7 = visual.Rect(
+    win=win, name='polygon_7',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
+    opacity=1, depth=-7.0, interpolate=True)
+polygon_8 = visual.Rect(
+    win=win, name='polygon_8',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
+    opacity=1, depth=-8.0, interpolate=True)
 loop_id = -1
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
-polygon = visual.Rect(
-    win=win, name='polygon',
-    width=(0.2, 0.2)[0], height=(0.2, 0.2)[1],
-    ori=0, pos=(-0.3, 0),
+polygon_trial_0 = visual.Rect(
+    win=win, name='polygon_trial_0',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-polygon_2 = visual.Rect(
-    win=win, name='polygon_2',
-    width=(0.2, 0.2)[0], height=(0.2, 0.2)[1],
-    ori=0, pos=(0.3, 0),
+polygon_trial_1 = visual.Rect(
+    win=win, name='polygon_trial_1',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
-text_3 = visual.TextStim(win=win, name='text_3',
-    text='命令1',
-    font='Arial',
-    pos=(-0.3, 0), height=0.05, wrapWidth=None, ori=0, 
-    color=[-1.000,-1.000,-1.000], colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-2.0);
-text_4 = visual.TextStim(win=win, name='text_4',
-    text='命令2',
-    font='Arial',
-    pos=(0.3, 0), height=0.05, wrapWidth=None, ori=0, 
-    color=[-1.000,-1.000,-1.000], colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-3.0);
+polygon_trial_2 = visual.Rect(
+    win=win, name='polygon_trial_2',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=-2.0, interpolate=True)
+polygon_trial_3 = visual.Rect(
+    win=win, name='polygon_trial_3',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=-3.0, interpolate=True)
+polygon_trial_4 = visual.Rect(
+    win=win, name='polygon_trial_4',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[1,1,1], fillColorSpace='rgb',
+    opacity=1, depth=-4.0, interpolate=True)
+polygon_trial_5 = visual.Rect(
+    win=win, name='polygon_trial_5',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=-5.0, interpolate=True)
+polygon_trial_6 = visual.Rect(
+    win=win, name='polygon_trial_6',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=-6.0, interpolate=True)
+polygon_trial_7 = visual.Rect(
+    win=win, name='polygon_trial_7',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=-7.0, interpolate=True)
+polygon_trial_8 = visual.Rect(
+    win=win, name='polygon_trial_8',units='pix', 
+    width=[1.0, 1.0][0], height=[1.0, 1.0][1],
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=-8.0, interpolate=True)
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -175,7 +266,7 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 key_resp.keys = []
 key_resp.rt = []
 # keep track of which components have finished
-instrComponents = [text, key_resp, polygon_6, polygon_7]
+instrComponents = [text, key_resp]
 for thisComponent in instrComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -230,24 +321,6 @@ while continueRoutine:
             # a response ends the routine
             continueRoutine = False
     
-    # *polygon_6* updates
-    if polygon_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        polygon_6.frameNStart = frameN  # exact frame index
-        polygon_6.tStart = t  # local t and not account for scr refresh
-        polygon_6.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(polygon_6, 'tStartRefresh')  # time at next scr refresh
-        polygon_6.setAutoDraw(True)
-    
-    # *polygon_7* updates
-    if polygon_7.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        polygon_7.frameNStart = frameN  # exact frame index
-        polygon_7.tStart = t  # local t and not account for scr refresh
-        polygon_7.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(polygon_7, 'tStartRefresh')  # time at next scr refresh
-        polygon_7.setAutoDraw(True)
-    
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
         core.quit()
@@ -271,15 +344,11 @@ for thisComponent in instrComponents:
         thisComponent.setAutoDraw(False)
 thisExp.addData('text.started', text.tStartRefresh)
 thisExp.addData('text.stopped', text.tStopRefresh)
-thisExp.addData('polygon_6.started', polygon_6.tStartRefresh)
-thisExp.addData('polygon_6.stopped', polygon_6.tStopRefresh)
-thisExp.addData('polygon_7.started', polygon_7.tStartRefresh)
-thisExp.addData('polygon_7.stopped', polygon_7.tStopRefresh)
 # the Routine "instr" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=5, method='random', 
+trials = data.TrialHandler(nReps=100, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='trials')
@@ -300,13 +369,36 @@ for thisTrial in trials:
     # ------Prepare to start Routine "cue"-------
     routineTimer.add(1.000000)
     # update component parameters for each repeat
+    polygon_0.setPos((mylocation[0][0], mylocation[0][1]))
+    polygon_0.setSize((size_w, size_h))
+    polygon_1.setPos((mylocation[1][0], mylocation[1][1]))
+    polygon_1.setSize((size_w, size_h))
+    polygon_2.setPos((mylocation[2][0],mylocation[2][1]))
+    polygon_2.setSize((size_w,size_h))
+    polygon_3.setPos((mylocation[3][0],mylocation[3][1]))
+    polygon_3.setSize((size_w,size_h))
+    polygon_4.setPos((mylocation[4][0], mylocation[4][1]))
+    polygon_4.setSize((5, 5))
+    polygon_5.setPos((mylocation[5][0], mylocation[5][1]))
+    polygon_5.setSize((size_w, size_h))
+    polygon_6.setPos((mylocation[6][0], mylocation[6][1]))
+    polygon_6.setSize((size_w, size_h))
+    polygon_7.setPos((mylocation[7][0], mylocation[7][1]))
+    polygon_7.setSize((size_w, size_h))
+    polygon_8.setPos((mylocation[8][0], mylocation[8][1]))
+    polygon_8.setSize((size_w, size_h))
+    
+    
     # peiyu code cue
+    selecList = [polygon_0, polygon_1, polygon_2, polygon_3, polygon_5, polygon_6, polygon_7, polygon_8]
+    selecList[ loop_id    %8].setFillColor([1.000,1.000,1.000]) # rgb
     loop_id += 1
-    selecList = [polygon_3, polygon_4]
-    selecList[ loop_id    % 2].setFillColor([1.000,-1.000,-1.000])
-    selecList[(loop_id +1)% 2].setFillColor([1.000, 1.000, 1.000])
+    selecList[ loop_id    %8].setFillColor([1.000,-1.000,-1.000]) # rgb
+    
+    
+    # peiyu code cue End
     # keep track of which components have finished
-    cueComponents = [polygon_3, polygon_4, text_2, text_5]
+    cueComponents = [polygon_0, polygon_1, polygon_2, polygon_3, polygon_4, polygon_5, polygon_6, polygon_7, polygon_8]
     for thisComponent in cueComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -329,6 +421,57 @@ for thisTrial in trials:
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        
+        # *polygon_0* updates
+        if polygon_0.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            polygon_0.frameNStart = frameN  # exact frame index
+            polygon_0.tStart = t  # local t and not account for scr refresh
+            polygon_0.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_0, 'tStartRefresh')  # time at next scr refresh
+            polygon_0.setAutoDraw(True)
+        if polygon_0.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > polygon_0.tStartRefresh + 1.0-frameTolerance:
+                # keep track of stop time/frame for later
+                polygon_0.tStop = t  # not accounting for scr refresh
+                polygon_0.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_0, 'tStopRefresh')  # time at next scr refresh
+                polygon_0.setAutoDraw(False)
+        
+        # *polygon_1* updates
+        if polygon_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            polygon_1.frameNStart = frameN  # exact frame index
+            polygon_1.tStart = t  # local t and not account for scr refresh
+            polygon_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_1, 'tStartRefresh')  # time at next scr refresh
+            polygon_1.setAutoDraw(True)
+        if polygon_1.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > polygon_1.tStartRefresh + 1.0-frameTolerance:
+                # keep track of stop time/frame for later
+                polygon_1.tStop = t  # not accounting for scr refresh
+                polygon_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_1, 'tStopRefresh')  # time at next scr refresh
+                polygon_1.setAutoDraw(False)
+        
+        # *polygon_2* updates
+        if polygon_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            polygon_2.frameNStart = frameN  # exact frame index
+            polygon_2.tStart = t  # local t and not account for scr refresh
+            polygon_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_2, 'tStartRefresh')  # time at next scr refresh
+            polygon_2.setAutoDraw(True)
+        if polygon_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > polygon_2.tStartRefresh + 1.0-frameTolerance:
+                # keep track of stop time/frame for later
+                polygon_2.tStop = t  # not accounting for scr refresh
+                polygon_2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_2, 'tStopRefresh')  # time at next scr refresh
+                polygon_2.setAutoDraw(False)
         
         # *polygon_3* updates
         if polygon_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -364,39 +507,73 @@ for thisTrial in trials:
                 win.timeOnFlip(polygon_4, 'tStopRefresh')  # time at next scr refresh
                 polygon_4.setAutoDraw(False)
         
-        # *text_2* updates
-        if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *polygon_5* updates
+        if polygon_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_2.frameNStart = frameN  # exact frame index
-            text_2.tStart = t  # local t and not account for scr refresh
-            text_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
-            text_2.setAutoDraw(True)
-        if text_2.status == STARTED:
+            polygon_5.frameNStart = frameN  # exact frame index
+            polygon_5.tStart = t  # local t and not account for scr refresh
+            polygon_5.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_5, 'tStartRefresh')  # time at next scr refresh
+            polygon_5.setAutoDraw(True)
+        if polygon_5.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_2.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > polygon_5.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                text_2.tStop = t  # not accounting for scr refresh
-                text_2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(text_2, 'tStopRefresh')  # time at next scr refresh
-                text_2.setAutoDraw(False)
+                polygon_5.tStop = t  # not accounting for scr refresh
+                polygon_5.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_5, 'tStopRefresh')  # time at next scr refresh
+                polygon_5.setAutoDraw(False)
         
-        # *text_5* updates
-        if text_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *polygon_6* updates
+        if polygon_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_5.frameNStart = frameN  # exact frame index
-            text_5.tStart = t  # local t and not account for scr refresh
-            text_5.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_5, 'tStartRefresh')  # time at next scr refresh
-            text_5.setAutoDraw(True)
-        if text_5.status == STARTED:
+            polygon_6.frameNStart = frameN  # exact frame index
+            polygon_6.tStart = t  # local t and not account for scr refresh
+            polygon_6.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_6, 'tStartRefresh')  # time at next scr refresh
+            polygon_6.setAutoDraw(True)
+        if polygon_6.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_5.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > polygon_6.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                text_5.tStop = t  # not accounting for scr refresh
-                text_5.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(text_5, 'tStopRefresh')  # time at next scr refresh
-                text_5.setAutoDraw(False)
+                polygon_6.tStop = t  # not accounting for scr refresh
+                polygon_6.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_6, 'tStopRefresh')  # time at next scr refresh
+                polygon_6.setAutoDraw(False)
+        
+        # *polygon_7* updates
+        if polygon_7.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            polygon_7.frameNStart = frameN  # exact frame index
+            polygon_7.tStart = t  # local t and not account for scr refresh
+            polygon_7.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_7, 'tStartRefresh')  # time at next scr refresh
+            polygon_7.setAutoDraw(True)
+        if polygon_7.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > polygon_7.tStartRefresh + 1.0-frameTolerance:
+                # keep track of stop time/frame for later
+                polygon_7.tStop = t  # not accounting for scr refresh
+                polygon_7.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_7, 'tStopRefresh')  # time at next scr refresh
+                polygon_7.setAutoDraw(False)
+        
+        # *polygon_8* updates
+        if polygon_8.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            polygon_8.frameNStart = frameN  # exact frame index
+            polygon_8.tStart = t  # local t and not account for scr refresh
+            polygon_8.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_8, 'tStartRefresh')  # time at next scr refresh
+            polygon_8.setAutoDraw(True)
+        if polygon_8.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > polygon_8.tStartRefresh + 1.0-frameTolerance:
+                # keep track of stop time/frame for later
+                polygon_8.tStop = t  # not accounting for scr refresh
+                polygon_8.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_8, 'tStopRefresh')  # time at next scr refresh
+                polygon_8.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -419,20 +596,51 @@ for thisTrial in trials:
     for thisComponent in cueComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
+    trials.addData('polygon_0.started', polygon_0.tStartRefresh)
+    trials.addData('polygon_0.stopped', polygon_0.tStopRefresh)
+    trials.addData('polygon_1.started', polygon_1.tStartRefresh)
+    trials.addData('polygon_1.stopped', polygon_1.tStopRefresh)
+    trials.addData('polygon_2.started', polygon_2.tStartRefresh)
+    trials.addData('polygon_2.stopped', polygon_2.tStopRefresh)
     trials.addData('polygon_3.started', polygon_3.tStartRefresh)
     trials.addData('polygon_3.stopped', polygon_3.tStopRefresh)
     trials.addData('polygon_4.started', polygon_4.tStartRefresh)
     trials.addData('polygon_4.stopped', polygon_4.tStopRefresh)
-    trials.addData('text_2.started', text_2.tStartRefresh)
-    trials.addData('text_2.stopped', text_2.tStopRefresh)
-    trials.addData('text_5.started', text_5.tStartRefresh)
-    trials.addData('text_5.stopped', text_5.tStopRefresh)
+    trials.addData('polygon_5.started', polygon_5.tStartRefresh)
+    trials.addData('polygon_5.stopped', polygon_5.tStopRefresh)
+    trials.addData('polygon_6.started', polygon_6.tStartRefresh)
+    trials.addData('polygon_6.stopped', polygon_6.tStopRefresh)
+    trials.addData('polygon_7.started', polygon_7.tStartRefresh)
+    trials.addData('polygon_7.stopped', polygon_7.tStopRefresh)
+    trials.addData('polygon_8.started', polygon_8.tStartRefresh)
+    trials.addData('polygon_8.stopped', polygon_8.tStopRefresh)
     
     # ------Prepare to start Routine "trial"-------
-    routineTimer.add(3.000000)
     # update component parameters for each repeat
+    polygon_trial_0.setPos((mylocation[0][0], mylocation[0][1]))
+    polygon_trial_0.setSize((size_w, size_h))
+    polygon_trial_1.setPos((mylocation[1][0], mylocation[1][1]))
+    polygon_trial_1.setSize((size_w, size_h))
+    polygon_trial_2.setPos((mylocation[2][0], mylocation[2][1]))
+    polygon_trial_2.setSize((size_w,size_h))
+    polygon_trial_3.setPos((mylocation[3][0], mylocation[3][1]))
+    polygon_trial_3.setSize((size_w,size_h))
+    polygon_trial_4.setPos((mylocation[4][0], mylocation[4][1]))
+    polygon_trial_4.setSize((5,5))
+    polygon_trial_5.setPos((mylocation[5][0], mylocation[5][1]))
+    polygon_trial_5.setSize((size_w,size_h))
+    polygon_trial_6.setPos((mylocation[6][0], mylocation[6][1]))
+    polygon_trial_6.setSize((size_w,size_h))
+    polygon_trial_7.setPos((mylocation[7][0], mylocation[7][1]))
+    polygon_trial_7.setSize((size_w,size_h))
+    polygon_trial_7.setFillColor([1,1,1])
+    polygon_trial_8.setPos((mylocation[8][0], mylocation[8][1]))
+    polygon_trial_8.setSize((size_w,size_h))
+    trial_dura = 2
+    
+    seleclist2 = [polygon_trial_0, polygon_trial_1, polygon_trial_2, polygon_trial_3, polygon_trial_5, polygon_trial_6, polygon_trial_7, polygon_trial_8]
     # keep track of which components have finished
-    trialComponents = [polygon, polygon_2, text_3, text_4]
+    trialComponents = [polygon_trial_0, polygon_trial_1, polygon_trial_2, polygon_trial_3, polygon_trial_4, polygon_trial_5, polygon_trial_6, polygon_trial_7, polygon_trial_8]
     for thisComponent in trialComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -448,7 +656,7 @@ for thisTrial in trials:
     continueRoutine = True
     
     # -------Run Routine "trial"-------
-    while continueRoutine and routineTimer.getTime() > 0:
+    while continueRoutine:
         # get current time
         t = trialClock.getTime()
         tThisFlip = win.getFutureFlipTime(clock=trialClock)
@@ -456,86 +664,189 @@ for thisTrial in trials:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *polygon* updates
-        if polygon.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *polygon_trial_0* updates
+        if polygon_trial_0.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            polygon.frameNStart = frameN  # exact frame index
-            polygon.tStart = t  # local t and not account for scr refresh
-            polygon.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(polygon, 'tStartRefresh')  # time at next scr refresh
-            polygon.setAutoDraw(True)
-        if polygon.status == STARTED:
+            polygon_trial_0.frameNStart = frameN  # exact frame index
+            polygon_trial_0.tStart = t  # local t and not account for scr refresh
+            polygon_trial_0.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_trial_0, 'tStartRefresh')  # time at next scr refresh
+            polygon_trial_0.setAutoDraw(True)
+        if polygon_trial_0.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > polygon.tStartRefresh + 3-frameTolerance:
+            if tThisFlipGlobal > polygon_trial_0.tStartRefresh + trial_dura-frameTolerance:
                 # keep track of stop time/frame for later
-                polygon.tStop = t  # not accounting for scr refresh
-                polygon.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(polygon, 'tStopRefresh')  # time at next scr refresh
-                polygon.setAutoDraw(False)
-        if polygon.status == STARTED:  # only update if drawing
-            polygon.setFillColor([1.000,1.000,1.000], log=False)
+                polygon_trial_0.tStop = t  # not accounting for scr refresh
+                polygon_trial_0.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_trial_0, 'tStopRefresh')  # time at next scr refresh
+                polygon_trial_0.setAutoDraw(False)
+        if polygon_trial_0.status == STARTED:  # only update if drawing
+            polygon_trial_0.setFillColor([1,1,1], log=False)
         
-        # *polygon_2* updates
-        if polygon_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *polygon_trial_1* updates
+        if polygon_trial_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            polygon_2.frameNStart = frameN  # exact frame index
-            polygon_2.tStart = t  # local t and not account for scr refresh
-            polygon_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(polygon_2, 'tStartRefresh')  # time at next scr refresh
-            polygon_2.setAutoDraw(True)
-        if polygon_2.status == STARTED:
+            polygon_trial_1.frameNStart = frameN  # exact frame index
+            polygon_trial_1.tStart = t  # local t and not account for scr refresh
+            polygon_trial_1.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_trial_1, 'tStartRefresh')  # time at next scr refresh
+            polygon_trial_1.setAutoDraw(True)
+        if polygon_trial_1.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > polygon_2.tStartRefresh + 3-frameTolerance:
+            if tThisFlipGlobal > polygon_trial_1.tStartRefresh + trial_dura-frameTolerance:
                 # keep track of stop time/frame for later
-                polygon_2.tStop = t  # not accounting for scr refresh
-                polygon_2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(polygon_2, 'tStopRefresh')  # time at next scr refresh
-                polygon_2.setAutoDraw(False)
-        if polygon_2.status == STARTED:  # only update if drawing
-            polygon_2.setFillColor([1.000,1.000,1.000], log=False)
+                polygon_trial_1.tStop = t  # not accounting for scr refresh
+                polygon_trial_1.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_trial_1, 'tStopRefresh')  # time at next scr refresh
+                polygon_trial_1.setAutoDraw(False)
+        if polygon_trial_1.status == STARTED:  # only update if drawing
+            polygon_trial_1.setFillColor([1,1,1], log=False)
         
-        # *text_3* updates
-        if text_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *polygon_trial_2* updates
+        if polygon_trial_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_3.frameNStart = frameN  # exact frame index
-            text_3.tStart = t  # local t and not account for scr refresh
-            text_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
-            text_3.setAutoDraw(True)
-        if text_3.status == STARTED:
+            polygon_trial_2.frameNStart = frameN  # exact frame index
+            polygon_trial_2.tStart = t  # local t and not account for scr refresh
+            polygon_trial_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_trial_2, 'tStartRefresh')  # time at next scr refresh
+            polygon_trial_2.setAutoDraw(True)
+        if polygon_trial_2.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_3.tStartRefresh + 3-frameTolerance:
+            if tThisFlipGlobal > polygon_trial_2.tStartRefresh + trial_dura-frameTolerance:
                 # keep track of stop time/frame for later
-                text_3.tStop = t  # not accounting for scr refresh
-                text_3.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(text_3, 'tStopRefresh')  # time at next scr refresh
-                text_3.setAutoDraw(False)
+                polygon_trial_2.tStop = t  # not accounting for scr refresh
+                polygon_trial_2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_trial_2, 'tStopRefresh')  # time at next scr refresh
+                polygon_trial_2.setAutoDraw(False)
+        if polygon_trial_2.status == STARTED:  # only update if drawing
+            polygon_trial_2.setFillColor([1,1,1], log=False)
         
-        # *text_4* updates
-        if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *polygon_trial_3* updates
+        if polygon_trial_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_4.frameNStart = frameN  # exact frame index
-            text_4.tStart = t  # local t and not account for scr refresh
-            text_4.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_4, 'tStartRefresh')  # time at next scr refresh
-            text_4.setAutoDraw(True)
-        if text_4.status == STARTED:
+            polygon_trial_3.frameNStart = frameN  # exact frame index
+            polygon_trial_3.tStart = t  # local t and not account for scr refresh
+            polygon_trial_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_trial_3, 'tStartRefresh')  # time at next scr refresh
+            polygon_trial_3.setAutoDraw(True)
+        if polygon_trial_3.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_4.tStartRefresh + 3-frameTolerance:
+            if tThisFlipGlobal > polygon_trial_3.tStartRefresh + trial_dura-frameTolerance:
                 # keep track of stop time/frame for later
-                text_4.tStop = t  # not accounting for scr refresh
-                text_4.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(text_4, 'tStopRefresh')  # time at next scr refresh
-                text_4.setAutoDraw(False)
+                polygon_trial_3.tStop = t  # not accounting for scr refresh
+                polygon_trial_3.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_trial_3, 'tStopRefresh')  # time at next scr refresh
+                polygon_trial_3.setAutoDraw(False)
+        if polygon_trial_3.status == STARTED:  # only update if drawing
+            polygon_trial_3.setFillColor([1,1,1], log=False)
+        
+        # *polygon_trial_4* updates
+        if polygon_trial_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            polygon_trial_4.frameNStart = frameN  # exact frame index
+            polygon_trial_4.tStart = t  # local t and not account for scr refresh
+            polygon_trial_4.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_trial_4, 'tStartRefresh')  # time at next scr refresh
+            polygon_trial_4.setAutoDraw(True)
+        if polygon_trial_4.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > polygon_trial_4.tStartRefresh + trial_dura-frameTolerance:
+                # keep track of stop time/frame for later
+                polygon_trial_4.tStop = t  # not accounting for scr refresh
+                polygon_trial_4.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_trial_4, 'tStopRefresh')  # time at next scr refresh
+                polygon_trial_4.setAutoDraw(False)
+        
+        # *polygon_trial_5* updates
+        if polygon_trial_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            polygon_trial_5.frameNStart = frameN  # exact frame index
+            polygon_trial_5.tStart = t  # local t and not account for scr refresh
+            polygon_trial_5.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_trial_5, 'tStartRefresh')  # time at next scr refresh
+            polygon_trial_5.setAutoDraw(True)
+        if polygon_trial_5.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > polygon_trial_5.tStartRefresh + trial_dura-frameTolerance:
+                # keep track of stop time/frame for later
+                polygon_trial_5.tStop = t  # not accounting for scr refresh
+                polygon_trial_5.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_trial_5, 'tStopRefresh')  # time at next scr refresh
+                polygon_trial_5.setAutoDraw(False)
+        if polygon_trial_5.status == STARTED:  # only update if drawing
+            polygon_trial_5.setFillColor([1,1,1], log=False)
+        
+        # *polygon_trial_6* updates
+        if polygon_trial_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            polygon_trial_6.frameNStart = frameN  # exact frame index
+            polygon_trial_6.tStart = t  # local t and not account for scr refresh
+            polygon_trial_6.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_trial_6, 'tStartRefresh')  # time at next scr refresh
+            polygon_trial_6.setAutoDraw(True)
+        if polygon_trial_6.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > polygon_trial_6.tStartRefresh + trial_dura-frameTolerance:
+                # keep track of stop time/frame for later
+                polygon_trial_6.tStop = t  # not accounting for scr refresh
+                polygon_trial_6.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_trial_6, 'tStopRefresh')  # time at next scr refresh
+                polygon_trial_6.setAutoDraw(False)
+        if polygon_trial_6.status == STARTED:  # only update if drawing
+            polygon_trial_6.setFillColor([1,1,1], log=False)
+        
+        # *polygon_trial_7* updates
+        if polygon_trial_7.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            polygon_trial_7.frameNStart = frameN  # exact frame index
+            polygon_trial_7.tStart = t  # local t and not account for scr refresh
+            polygon_trial_7.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_trial_7, 'tStartRefresh')  # time at next scr refresh
+            polygon_trial_7.setAutoDraw(True)
+        if polygon_trial_7.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > polygon_trial_7.tStartRefresh + trial_dura-frameTolerance:
+                # keep track of stop time/frame for later
+                polygon_trial_7.tStop = t  # not accounting for scr refresh
+                polygon_trial_7.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_trial_7, 'tStopRefresh')  # time at next scr refresh
+                polygon_trial_7.setAutoDraw(False)
+        
+        # *polygon_trial_8* updates
+        if polygon_trial_8.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            polygon_trial_8.frameNStart = frameN  # exact frame index
+            polygon_trial_8.tStart = t  # local t and not account for scr refresh
+            polygon_trial_8.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(polygon_trial_8, 'tStartRefresh')  # time at next scr refresh
+            polygon_trial_8.setAutoDraw(True)
+        if polygon_trial_8.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > polygon_trial_8.tStartRefresh + trial_dura-frameTolerance:
+                # keep track of stop time/frame for later
+                polygon_trial_8.tStop = t  # not accounting for scr refresh
+                polygon_trial_8.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(polygon_trial_8, 'tStopRefresh')  # time at next scr refresh
+                polygon_trial_8.setAutoDraw(False)
+        if polygon_trial_8.status == STARTED:  # only update if drawing
+            polygon_trial_8.setFillColor([1,1,1], log=False)
         # peiyu code
-        f1 = 5
-        phi1 = 0
-        amp1 = (sin(2*pi*f1*frameN/60) - 0.5)*2
-        f2 = 20
-        phi2 = 0
-        amp2 = (sin(2 * pi * f2 * frameN / 60) - 0.5) * 2
-        polygon.setFillColor([amp1, amp1, amp1])
-        polygon_2.setFillColor([amp2, amp2, amp2])
+        #f1 = 5
+        #phi1 = 0
+        #amp1 = (sin(2*pi*f1*frameN/60) - 0.5)*2
+        #f2 = 20
+        #phi2 = 0
+        #amp2 = (sin(2 * pi * f2 * frameN / 60) - 0.5) * 2
+        #polygon.setFillColor([amp1, amp1, amp1])
+        #polygon_2.setFillColor([amp2, amp2, amp2])
+        
+        
+        Amp = (sin(2*pi*Freq*frameN/60  + Phas) - 0.5)*2
+        
+        print(Amp)
+        
+        for idx in range(8):
+            seleclist2[idx].setFillColor([Amp[i]])
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -558,17 +869,29 @@ for thisTrial in trials:
     for thisComponent in trialComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials.addData('polygon.started', polygon.tStartRefresh)
-    trials.addData('polygon.stopped', polygon.tStopRefresh)
-    trials.addData('polygon_2.started', polygon_2.tStartRefresh)
-    trials.addData('polygon_2.stopped', polygon_2.tStopRefresh)
-    trials.addData('text_3.started', text_3.tStartRefresh)
-    trials.addData('text_3.stopped', text_3.tStopRefresh)
-    trials.addData('text_4.started', text_4.tStartRefresh)
-    trials.addData('text_4.stopped', text_4.tStopRefresh)
+    trials.addData('polygon_trial_0.started', polygon_trial_0.tStartRefresh)
+    trials.addData('polygon_trial_0.stopped', polygon_trial_0.tStopRefresh)
+    trials.addData('polygon_trial_1.started', polygon_trial_1.tStartRefresh)
+    trials.addData('polygon_trial_1.stopped', polygon_trial_1.tStopRefresh)
+    trials.addData('polygon_trial_2.started', polygon_trial_2.tStartRefresh)
+    trials.addData('polygon_trial_2.stopped', polygon_trial_2.tStopRefresh)
+    trials.addData('polygon_trial_3.started', polygon_trial_3.tStartRefresh)
+    trials.addData('polygon_trial_3.stopped', polygon_trial_3.tStopRefresh)
+    trials.addData('polygon_trial_4.started', polygon_trial_4.tStartRefresh)
+    trials.addData('polygon_trial_4.stopped', polygon_trial_4.tStopRefresh)
+    trials.addData('polygon_trial_5.started', polygon_trial_5.tStartRefresh)
+    trials.addData('polygon_trial_5.stopped', polygon_trial_5.tStopRefresh)
+    trials.addData('polygon_trial_6.started', polygon_trial_6.tStartRefresh)
+    trials.addData('polygon_trial_6.stopped', polygon_trial_6.tStopRefresh)
+    trials.addData('polygon_trial_7.started', polygon_trial_7.tStartRefresh)
+    trials.addData('polygon_trial_7.stopped', polygon_trial_7.tStopRefresh)
+    trials.addData('polygon_trial_8.started', polygon_trial_8.tStartRefresh)
+    trials.addData('polygon_trial_8.stopped', polygon_trial_8.tStopRefresh)
+    # the Routine "trial" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 5 repeats of 'trials'
+# completed 100 repeats of 'trials'
 
 
 # Flip one final time so any remaining win.callOnFlip() 
