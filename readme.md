@@ -1,4 +1,4 @@
-# psychopy 实现建议SSVEP视觉刺激
+# psychopy 实现简易SSVEP视觉刺激
 
 psychopy是专业的心理学刺激库，
 
